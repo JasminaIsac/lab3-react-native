@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Cooking-app",
+    "slug": "Cooking-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/recipe-book.png",
+    "scheme": "cookingapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/recipe-book.png",
+        "backgroundImage": "./assets/recipe-book.png",
+        "monochromeImage": "./assets/recipe-book.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/recipe-book.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/recipe-book.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
